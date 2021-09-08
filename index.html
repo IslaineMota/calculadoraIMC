@@ -12,21 +12,24 @@
 
 <div class="container">
     <header class="header">
-        <h2>Cálculo IMC</h2>
-        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
-        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo. Importante: siga os exemplos e use pontos como separadores.</p>
+        <h2>Quer descobrir seu IMC?</h2>
+        <p> Insira seu peso e sua altura nos campos abaixo. Importante: siga os exemplos e use pontos como separadores.</p>
     </header>
     <main>
-        <form action="/" class="form" method="POST">
-            <label for="altura">Altura (ex.: 1,70)</label>
+        <form action="/" id="formulario" method="POST">
+            <label for="altura">Altura (ex.: 1.70)</label>
             <input type="text" id="altura" placeholder="Metros">
-            <label for="peso">Peso (ex.: 69,2)</label>
+            <label for="peso">Peso (ex.: 69.2)</label>
             <input type="text" id= "peso" placeholder="Quilogramas">
             <button type="submit">Calcular</button>
         </form>
+        <div id="resultado"></div>
+        <!--<button onclick="setResultado()">resultado</button>-->
     </main>
 </div>
     <script src="./assets/js/main.js"></script>
+    <!--<script type="module" src="assets/js/interromper-form.js"></script>
+        <script type="module" src="assets/js/resultado.js"></script>
+        <script type="module" src="assets/js/criar-paragrafo.js"></script>-->   
 </body>
 </html>
