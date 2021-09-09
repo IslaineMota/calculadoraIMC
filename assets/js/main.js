@@ -5,8 +5,10 @@ form.addEventListener('submit', function (e) {
     const inputHeight = e.target.querySelector('#altura');
     const inputWeight = e.target.querySelector('#peso');
 
-    const height = Number(inputHeight.value);
-    const weight = Number(inputWeight.value);
+    const acceptCommaHeight = String(inputHeight.value).replace(',','.');
+    const height = Number(acceptCommaHeight);
+    const acceptCommaWeight = String(inputWeight.value).replace(',','.');
+    const weight = Number(acceptCommaWeight);
     
     if (!height) {
         setResultado('Altura inválida.');
